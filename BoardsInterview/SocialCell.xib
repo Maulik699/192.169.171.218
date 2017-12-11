@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell_twitter" rowHeight="108" id="KsR-fh-3lO" customClass="SocialCell" customModule="BoardsInterview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KsR-fh-3lO" id="DAi-Ba-2Np">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kI9-0R-Ljt" customClass="AnimatableView" customModule="IBAnimatable">
+                        <rect key="frame" x="8" y="8" width="304" height="92"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SBUT Project ea" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3v-jh-bfj" customClass="TTTAttributedLabel">
+                                <rect key="frame" x="8" y="8" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="p6s-f9-IAW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0t-5K-DQS" customClass="TTTAttributedLabel">
+                                <rect key="frame" x="8" y="30" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="QNF-xN-qcR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Tue Mar 07 08:04" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXq-7j-J6q">
+                                <rect key="frame" x="8" y="61" width="123" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="ydO-QO-egS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Via SBUT" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGg-pf-Lgh">
+                                <rect key="frame" x="232" y="59" width="64" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Y77-cW-I5w"/>
+                                    <constraint firstAttribute="height" constant="21" id="laH-e3-x3i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="z3v-jh-bfj" secondAttribute="trailing" constant="8" id="17g-Ye-N2h"/>
+                            <constraint firstAttribute="bottom" secondItem="EXq-7j-J6q" secondAttribute="bottom" constant="13" id="25q-wk-hMr"/>
+                            <constraint firstItem="vGg-pf-Lgh" firstAttribute="top" secondItem="e0t-5K-DQS" secondAttribute="bottom" constant="8" id="3J0-h2-tNT"/>
+                            <constraint firstItem="z3v-jh-bfj" firstAttribute="leading" secondItem="kI9-0R-Ljt" secondAttribute="leading" constant="8" id="3dC-Jf-fnp"/>
+                            <constraint firstItem="EXq-7j-J6q" firstAttribute="top" secondItem="e0t-5K-DQS" secondAttribute="bottom" constant="10" id="4eb-LZ-eVk"/>
+                            <constraint firstItem="e0t-5K-DQS" firstAttribute="top" secondItem="z3v-jh-bfj" secondAttribute="bottom" constant="1" id="58r-3b-4pN"/>
+                            <constraint firstItem="z3v-jh-bfj" firstAttribute="top" secondItem="kI9-0R-Ljt" secondAttribute="top" constant="8" id="HGE-Xw-lVT"/>
+                            <constraint firstItem="EXq-7j-J6q" firstAttribute="leading" secondItem="kI9-0R-Ljt" secondAttribute="leading" constant="8" id="KnA-1z-bhX"/>
+                            <constraint firstItem="e0t-5K-DQS" firstAttribute="leading" secondItem="kI9-0R-Ljt" secondAttribute="leading" constant="8" id="PO0-WJ-UgN"/>
+                            <constraint firstAttribute="trailing" secondItem="e0t-5K-DQS" secondAttribute="trailing" constant="8" id="Tin-0h-4NL"/>
+                            <constraint firstAttribute="trailing" secondItem="vGg-pf-Lgh" secondAttribute="trailing" constant="8" id="jlr-Uc-rU5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kI9-0R-Ljt" firstAttribute="leading" secondItem="DAi-Ba-2Np" secondAttribute="leading" constant="8" id="F4y-Dp-idm"/>
+                    <constraint firstAttribute="bottom" secondItem="kI9-0R-Ljt" secondAttribute="bottom" constant="7.5" id="mpw-Od-U0z"/>
+                    <constraint firstAttribute="trailing" secondItem="kI9-0R-Ljt" secondAttribute="trailing" constant="8" id="mxv-jS-5JA"/>
+                    <constraint firstItem="kI9-0R-Ljt" firstAttribute="top" secondItem="DAi-Ba-2Np" secondAttribute="top" constant="8" id="y64-CD-zAf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.80392156859999997" green="0.77647058820000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="cl4-nW-Pxa"/>
+            <connections>
+                <outlet property="lblDate" destination="EXq-7j-J6q" id="qJF-qG-Eg6"/>
+                <outlet property="lblLink" destination="e0t-5K-DQS" id="73V-be-QGy"/>
+                <outlet property="lblTitle" destination="z3v-jh-bfj" id="Rpd-OT-6Vd"/>
+                <outlet property="lblVia" destination="vGg-pf-Lgh" id="uw2-k4-mxz"/>
+            </connections>
+            <point key="canvasLocation" x="-10" y="-140"/>
+        </tableViewCell>
+    </objects>
+</document>

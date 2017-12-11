@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell_sbut" rowHeight="279" id="KGk-i7-Jjw" customClass="SbutCell" customModule="BoardsInterview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="279"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="278.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fg0-V9-zJT" customClass="AnimatableView" customModule="IBAnimatable">
+                        <rect key="frame" x="8" y="9" width="304" height="262"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SBUT Project ea" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doe-GK-V5T" customClass="TTTAttributedLabel">
+                                <rect key="frame" x="8" y="8" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="GmO-e2-9w1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lke-qL-SDB">
+                                <rect key="frame" x="8" y="37" width="288" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="MvJ-dY-7Nq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Tue Mar 07 08:04" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StX-cX-NCV">
+                                <rect key="frame" x="8" y="224" width="123" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="8IR-bU-JMq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Via SBUT" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aac-XC-Ifz">
+                                <rect key="frame" x="232" y="224" width="64" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="6tp-Ra-FYh"/>
+                                    <constraint firstAttribute="height" constant="21" id="nGU-1S-Wfm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1z-BX-5yH">
+                                <rect key="frame" x="137" y="219" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="R4Y-pm-O4X"/>
+                                    <constraint firstAttribute="width" constant="30" id="qNs-Yg-SII"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="bqtlzgcl.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="doe-GK-V5T" secondAttribute="trailing" constant="8" id="74g-Lj-2mM"/>
+                            <constraint firstItem="StX-cX-NCV" firstAttribute="top" secondItem="Lke-qL-SDB" secondAttribute="bottom" constant="13" id="C2m-Wb-8b8"/>
+                            <constraint firstItem="D1z-BX-5yH" firstAttribute="top" secondItem="Lke-qL-SDB" secondAttribute="bottom" constant="8" id="KMs-l7-9iW"/>
+                            <constraint firstItem="Lke-qL-SDB" firstAttribute="top" secondItem="doe-GK-V5T" secondAttribute="bottom" constant="8" id="P63-Yw-T9D"/>
+                            <constraint firstAttribute="trailing" secondItem="aac-XC-Ifz" secondAttribute="trailing" constant="8" id="U9Y-2p-VtQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Lke-qL-SDB" secondAttribute="trailing" constant="8" id="UYE-Gq-VHL"/>
+                            <constraint firstItem="aac-XC-Ifz" firstAttribute="top" secondItem="Lke-qL-SDB" secondAttribute="bottom" constant="13" id="X9b-3H-mUs"/>
+                            <constraint firstItem="doe-GK-V5T" firstAttribute="top" secondItem="fg0-V9-zJT" secondAttribute="top" constant="8" id="adq-b0-dq8"/>
+                            <constraint firstItem="D1z-BX-5yH" firstAttribute="centerX" secondItem="fg0-V9-zJT" secondAttribute="centerX" id="cQR-5A-Cj8"/>
+                            <constraint firstItem="doe-GK-V5T" firstAttribute="leading" secondItem="fg0-V9-zJT" secondAttribute="leading" constant="8" id="f4t-cj-D3n"/>
+                            <constraint firstItem="StX-cX-NCV" firstAttribute="leading" secondItem="fg0-V9-zJT" secondAttribute="leading" constant="8" id="fu3-OZ-JZA"/>
+                            <constraint firstAttribute="bottom" secondItem="StX-cX-NCV" secondAttribute="bottom" constant="20" id="kfN-25-c9P"/>
+                            <constraint firstItem="Lke-qL-SDB" firstAttribute="leading" secondItem="fg0-V9-zJT" secondAttribute="leading" constant="8" id="oTK-mk-CBu"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fg0-V9-zJT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Dp5-LI-hQ1"/>
+                    <constraint firstAttribute="trailing" secondItem="fg0-V9-zJT" secondAttribute="trailing" constant="8" id="GdG-u1-sja"/>
+                    <constraint firstItem="fg0-V9-zJT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="hCs-OQ-MLh"/>
+                    <constraint firstAttribute="bottom" secondItem="fg0-V9-zJT" secondAttribute="bottom" constant="7.5" id="mGr-2i-w2g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.80392156862745101" green="0.77647058823529413" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnShare" destination="D1z-BX-5yH" id="XSN-Ln-Zed"/>
+                <outlet property="imgMessage" destination="Lke-qL-SDB" id="fir-Vq-VUT"/>
+                <outlet property="lblDate" destination="StX-cX-NCV" id="tse-nI-kbS"/>
+                <outlet property="lblTitle" destination="doe-GK-V5T" id="YGi-p4-7Ya"/>
+                <outlet property="lblVia" destination="aac-XC-Ifz" id="rGp-y0-0Gt"/>
+            </connections>
+            <point key="canvasLocation" x="-10" y="-54.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bqtlzgcl.png" width="362" height="362"/>
+    </resources>
+</document>

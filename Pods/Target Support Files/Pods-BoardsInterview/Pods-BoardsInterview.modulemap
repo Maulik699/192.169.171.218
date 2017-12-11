@@ -1,0 +1,6 @@
+framework module Pods_BoardsInterview {
+  umbrella header "Pods-BoardsInterview-umbrella.h"
+
+  export *
+  module * { export * }
+}

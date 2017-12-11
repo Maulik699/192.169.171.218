@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SocialView" customModule="BoardsInterview" customModuleProvider="target">
+            <connections>
+                <outlet property="seg" destination="dNX-DA-Ywa" id="NZA-4b-0Je"/>
+                <outlet property="tblList" destination="CU2-Sq-eWK" id="tyq-N4-Yy6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dNX-DA-Ywa">
+                    <rect key="frame" x="30" y="8" width="260" height="29"/>
+                    <segments>
+                        <segment title="All"/>
+                        <segment title="SBUT"/>
+                        <segment title="Social"/>
+                    </segments>
+                    <color key="tintColor" red="0.46274509803921571" green="0.25490196078431371" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="segmentChanged:" destination="-1" eventType="valueChanged" id="sel-pZ-gN0"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CU2-Sq-eWK">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="iYd-E7-n0w"/>
+                        <outlet property="delegate" destination="-1" id="bWr-v7-m0O"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.80392156859999997" green="0.77647058820000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CU2-Sq-eWK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CMJ-Vo-5Wm"/>
+                <constraint firstItem="CU2-Sq-eWK" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="D6W-Ko-xgm"/>
+                <constraint firstItem="dNX-DA-Ywa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="GgY-np-ciS"/>
+                <constraint firstItem="CU2-Sq-eWK" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ubx-7F-KWp"/>
+                <constraint firstItem="CU2-Sq-eWK" firstAttribute="top" secondItem="dNX-DA-Ywa" secondAttribute="bottom" constant="8" id="Uje-Hg-2K8"/>
+                <constraint firstItem="dNX-DA-Ywa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="ar6-XR-3S2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dNX-DA-Ywa" secondAttribute="trailing" constant="30" id="lmu-Kz-Gol"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
